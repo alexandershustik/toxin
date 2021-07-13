@@ -1,0 +1,118 @@
+// Footer PROJECT STYLES
+
+footer
+    flex: 0 0 auto
+    background: #000
+    color: #fff
+    .wrap
+        display: flex
+        align-items: baseline
+        justify-content: space-between
+        align-items: stretch
+        @include media-breakpoint-down(md)
+            flex-direction: column
+    .item
+        &__list
+            @include media-breakpoint-down(md)
+                margin-top: 20px
+        &__social
+            align-self: flex-end
+            @include media-breakpoint-down(md)
+                align-self: flex-start
+                margin-top: 20px
+    
+    .sublist
+        &__title
+            font-size: 19px
+            font-weight: 700
+            color: #fff
+            text-decoration: none
+            text-transform: uppercase
+            transition: .2s
+            &:hover, &:focus
+                color: darken(#fff,50%)
+        &__wrap
+            list-style-type: none
+            margin: 0
+            padding: 0
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr
+            gap: 0px 0px
+            grid-template-areas: ". ." ". ." ". ."
+            @include media-breakpoint-down(xs)
+                grid-template-areas: "."
+                grid-template-columns: 1fr
+        &__item
+            width: 202px
+            line-height: 1.2
+        &__link
+            font-size: 15px
+            color: #fff
+            text-decoration: none
+            transition: .2s
+            &:hover, &:focus
+                color: darken(#fff,50%)
+    
+    .list
+        height: 100%
+        display: flex
+        align-items: stretch
+        &__wrap
+            list-style-type: none
+            margin: 0
+            padding: 0
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__item
+            line-height: 1.5
+            text-transform: uppercase
+        &__link
+            font-size: 19px
+            font-weight: 700
+            color: #fff
+            text-decoration: none
+            transition: .2s
+            &:hover, &:focus
+                color: darken(#fff,50%)
+
+    .social
+        &__title
+            font-size: 19px
+            font-weight: 700
+            color: #fff
+        &__wrap
+            display: flex
+            list-style-type: none
+            margin: 0
+            padding: 0
+            justify-content: flex-end
+            @include media-breakpoint-down(md)
+                justify-content: flex-start
+        &__item
+            margin: 0 9px
+            &-wha
+                line-height: 53px
+            &:last-child
+                margin-right: 0
+            &:first-child
+                margin-left: 0
+        &__link
+            width: 24px
+            height: 24px
+            transition: .2s
+            path
+                transition: .2s
+            &:hover, &:focus
+                path
+                    fill: darken(#fff,50%)
+
+    .copyright
+        max-width: 1100px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: flex-end
+        font-size: 13px
+        padding-bottom: 20px

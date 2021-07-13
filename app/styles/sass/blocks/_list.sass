@@ -1,0 +1,133 @@
+.service
+    display: flex
+    justify-content: space-between
+    align-items: start
+    margin-top: 45px
+    position: relative
+    @include media-breakpoint-down(md)
+        flex-direction: column
+        align-items: center
+        position: relative
+    &__ul
+        text-align: center
+        width: 474px
+        transition: 0.2s
+        @include media-breakpoint-down(lg)
+            padding-right: 20px
+            width: 100%
+            max-width: 474px
+        @include media-breakpoint-down(md)
+            overflow: scroll
+            display: flex
+            width: 100%
+            max-width: 100%
+            margin-bottom: 20px
+            padding-right: 0
+            &::before
+                content: ''
+                width: 50px
+                height: 100%
+                background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+                top: 0
+                left: 0
+                margin: auto
+                position: absolute
+            &::after
+                content: ''
+                width: 50px
+                height: 100%
+                background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+                top: 0
+                right: 0%
+                margin: auto
+                position: absolute
+    &__item
+        text-align: center
+        background: none
+        border: 2px solid #000
+        border-radius: 39px
+        width: 100%
+        margin-bottom: 46px
+        line-height: 42px
+        transition: .2s
+        outline: none
+        &:last-child
+            margin-bottom: 0
+        &:hover, &:focus, &-active
+            background: $primary
+            color: #fff
+            border-color: transparent
+        @include media-breakpoint-down(md)
+            white-space: nowrap
+            margin: 0 10px
+            padding: 0 20px
+            &:last-child
+                margin-right: 30px
+            &:first-child
+                margin-left: 30px
+        @include media-breakpoint-down(sm)
+            font-size: .8em
+
+    &__desc
+        width: 570px
+        @include media-breakpoint-down(md)
+            position: relative
+            height: 518px
+        @include media-breakpoint-down(sm)
+            width: 100%
+            max-width: 500px
+        @include media-breakpoint-down(xs)
+            height: auto
+    &__txt
+        opacity: 0
+        background: $bg
+        border-radius: 40px
+        padding: 48px 40px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        line-height: 35px
+        position: absolute
+        top: 0
+        z-index: 0
+        transition: .2s
+        height: 518px
+        justify-content: space-between
+        &-active
+            opacity: 1
+            z-index: 1
+            position: relative
+        @include media-breakpoint-down(xs)
+            height: auto
+            min-height: 518px
+    &__head
+        font-size: 1.67em
+        font-weight: 700
+        line-height: 50px
+        margin-bottom: 30px
+        width: 100%
+        @include media-breakpoint-down(sm)
+            font-size: 1.2em
+            line-height: 1.2
+    &__btn
+        margin-top: 40px
+        text-align: center
+        background: none
+        border: 2px solid transparent
+        color: #fff
+        background: $primary
+        border-radius: 39px
+        line-height: 28px
+        padding: 5px 28px
+        transition: .2s
+        outline: none
+        text-decoration: none
+        &:hover, &:focus, &-active
+            background: #fff
+            color: $primary
+            border-color: $primary
+            text-decoration: none
+    &__text
+        @include media-breakpoint-down(sm)
+            font-size: .8em
+            line-height: 1.2

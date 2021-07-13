@@ -1,0 +1,10 @@
+    @include media-breakpoint-down(xl)
+        background: red
+    @include media-breakpoint-down(lg)
+        background: yellow
+    @include media-breakpoint-down(md)
+        background: green
+    @include media-breakpoint-down(sm)
+        background: orange
+    @include media-breakpoint-down(xs)
+        background: purple
