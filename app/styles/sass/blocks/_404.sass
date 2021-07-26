@@ -1,0 +1,60 @@
+.main__page-404
+    background: $bg
+.page-404
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 0
+        position: relative
+        @include media-breakpoint-down(md)
+            flex-direction: column
+            justify-content: center
+        &::before
+            position: absolute
+            top: 0
+            left: -220px
+            content: ''
+            background: url(../images/404-dot-l.png)
+            width: 170px
+            height: 210px
+        &::after
+            position: absolute
+            bottom: 0
+            right: -220px
+            content: ''
+            background: url(../images/404-dot-r.png)
+            width: 170px
+            height: 210px
+    &__img
+        padding-right: 84px
+        @include media-breakpoint-down(md)
+            padding-right: 0
+            width: 100%
+            padding-bottom: 20px
+    &__title
+        font-size: 48px
+        font-weight: 700
+        padding-bottom: 30px
+        @include media-breakpoint-down(md)
+            line-height: 1.2
+    &__txt
+        font-size: 28px
+        padding-bottom: 60px
+        @include media-breakpoint-down(md)
+            line-height: 1.2
+    &__link
+        color: #fff
+        text-decoration: none
+        padding: 5px 100px
+        border-radius: 68px
+        background: $accent
+        transition: .2s
+        border: 1px solid transparent
+        @include media-breakpoint-down(md)
+            padding: 5px 40px
+        &:hover, &:focus
+            background: #fff
+            color: $accent
+            text-decoration: none
+            border: 1px solid $accent

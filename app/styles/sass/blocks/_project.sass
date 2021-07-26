@@ -1,0 +1,157 @@
+.main__project
+    .wrap
+        padding-top: 0
+        padding-bottom: 0
+        &.b-contacts
+            padding: 100px 0
+.project
+    &-hero
+        position: relative
+        &__img
+            width: 100%
+            object-fit: cover
+            height: 778px
+            @include media-breakpoint-down(md)
+                height: 500px
+        &__title
+            font-size: 48px
+            color: #fff
+            background: rgba($primary,.7)
+            padding: 34px 52px
+            width: 662px
+            line-height: 1.2
+            position: absolute
+            top: 70px
+            @include media-breakpoint-down(md)
+                width: 100%
+                font-size: 30px
+        &::before
+            position: absolute
+            top: 240px
+            left: -220px
+            content: ''
+            background: url(../images/project-hero-l.png)
+            width: 170px
+            height: 210px
+            background-repeat: no-repeat
+        &::after
+            position: absolute
+            bottom: 170px
+            right: -220px
+            content: ''
+            background: url(../images/project-hero-l.png)
+            width: 170px
+            height: 210px
+            transform: rotate(45deg)
+            background-repeat: no-repeat
+    &-adv
+        padding-left: 100px
+        @include media-breakpoint-down(md)
+            padding-left: 0
+        &__row
+            padding: 90px 0
+            display: flex
+            justify-content: start
+            align-items: start
+            @include media-breakpoint-down(md)
+                flex-direction: column
+                padding: 30px 0
+        &__col
+            &:first-child
+                margin-right: 190px
+                width: 380px
+                @include media-breakpoint-down(md)
+                    width: 100%
+        &__head
+            color: $accent
+            font-size: 20px
+            padding-bottom: 10px
+            @include media-breakpoint-down(md)
+                font-size: 18px
+        &__digit
+            font-size: 64px
+            font-weight: 700
+            text-decoration: underline
+            @include media-breakpoint-down(md)
+                font-size: 40px
+        &__txt
+            width: 380px
+            @include media-breakpoint-down(md)
+                font-size: 16px
+                width: 100%
+.project-featuries
+    padding: 90px 0
+    &.featuries
+        position: relative
+        overflow-y: clip
+        &::before
+            position: absolute
+            top: 10px
+            left: -220px
+            content: ''
+            background: url(../images/project-features-l.png)
+            width: 170px
+            height: 210px
+            background-repeat: no-repeat
+        &::after
+            position: absolute
+            bottom: 10px
+            right: -220px
+            content: ''
+            background: url(../images/project-features-l.png)
+            width: 170px
+            height: 210px
+            transform: rotate(45deg)
+            background-repeat: no-repeat
+    &.tasks
+        position: relative
+        overflow-y: clip
+        &::after
+            position: absolute
+            bottom: 10px
+            right: -220px
+            content: ''
+            background: url(../images/project-hero-l.png)
+            width: 170px
+            height: 210px
+            background-repeat: no-repeat
+    &.decision
+        position: relative
+        overflow-y: clip
+        &::before
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            left: -220px
+            content: ''
+            background: url(../images/project-features-l.png)
+            width: 170px
+            height: 210px
+            background-repeat: no-repeat
+    &.result
+        position: relative
+        overflow-y: clip
+        &::after
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            right: -220px
+            content: ''
+            background: url(../images/project-hero-l.png)
+            width: 170px
+            height: 210px
+            background-repeat: no-repeat
+            transform: rotate(45deg)
+    &__header
+        font-weight: bold
+        font-size: 32px
+        padding-bottom: 20px
+    &__txt
+        ul
+            list-style-image: url("../images/li-dot.png")
+            padding: 15px
+            margin: 0
+            li
+                padding-left: 10px
